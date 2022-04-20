@@ -18,12 +18,12 @@ for i in mark_list:
         failing= ",".join(name)
         failing+= "\n"
         fail_list.append(failing)
-print(fail_list)
 
-with open("failed_students.txt","w",encoding="utf-8") as file1:
-    file1.writelines(fail_list)
 
-with open ("passing_students","w",encoding="utf-8") as file2:
+# with open("failed_students.txt","w",encoding="utf-8") as file1:
+#     file1.writelines(fail_list)
+
+with open ("passing_students.txt","w",encoding="utf-8") as file2:
     file2.writelines(pass_list)
     
 
